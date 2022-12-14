@@ -1,0 +1,20 @@
+<div case="*">
+  <table class="table table-hover" style="margin-left: -5px">
+    <thead>
+    <tr>
+      <th>Сотрудник</th>
+      <th>Проступок</th>
+      <th>Наказание</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let punishment of punishments">
+      <td>{{punishment.Employees.surname}} + " " + {{punishment.Employees.firstName}} + " " + {{punishment.Employees.patronymic}}</td>
+      <td>{{punishment.misconduct}}</td>
+      <td>{{punishment.judgment}}</td>
+      <td><button class="btn btn-danger" (click)="delete(punishment)">Удалить</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <a routerLink="/Admin/addPunishment"><button>Добавить</button></a>
+</div>

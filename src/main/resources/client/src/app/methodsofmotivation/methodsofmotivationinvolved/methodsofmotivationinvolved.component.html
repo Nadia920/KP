@@ -1,0 +1,30 @@
+<div class="col-md-6">
+  <table class="table table-striped" style="margin-left: -5px">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>До</th>
+      <th>После</th>
+      <th>Сотрудник</th>
+      <th>Предоставил</th>
+      <th>Тип финансовой мотивации</th>
+      <th>Тип не финансовой мотивации</th>
+      <th>Дата предоставления</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let methodOfMotivationInvolved of methodsOfMotivationInvolved">
+      <td class="hidden">{{methodOfMotivationInvolved.id}}</td>
+      <td>{{methodOfMotivationInvolved.before}}</td>
+      <td>{{methodOfMotivationInvolved.after}}</td>
+      <!--td>`{{methodOfMotivationInvolved.employee.surname}} + " " + {{methodOfMotivationInvolved.employee.firstName}} + {{methodOfMotivationInvolved.employee.patronymic}}`</td>
+      <td>`{{methodOfMotivationInvolved.hrManager.HRSurname}} + " " + {{methodOfMotivationInvolved.hrManager.HRFirstName}} + " " + {{methodOfMotivationInvolved.hrManager.HRPatronymic}}`</td-->
+      <td>{{methodOfMotivationInvolved.typeFinancialMotivation.nameFinMotivation}}</td>
+      <td>{{methodOfMotivationInvolved.typeNonFinancialMotivation.nameNonFinMotivation}}</td>
+      <td>{{methodOfMotivationInvolved.dateOfRecieving}}</td>
+      <td><button class="btn btn-danger" (click)=delete(methodOfMotivationInvolved)>Удалить метод мотивации</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <a routerLink="/Admin/addMethodsOfMotivation"><button>Добавить</button></a>
+</div>
