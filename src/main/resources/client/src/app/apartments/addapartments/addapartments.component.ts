@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Apartment } from 'src/app/models/apartment.model';
 
 @Component({
   selector: 'app-addapartments',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./addapartments.component.scss']
 })
 export class AddApartmentsComponent {
+
+  apartment: Apartment = {
+    id: 0,
+    address: '',
+  totalCost: 0,
+  companyPaymentPercentage: 0,
+  termsOfProvision: '',
+  typeFinancialMotivation: null
+  };
 
 }

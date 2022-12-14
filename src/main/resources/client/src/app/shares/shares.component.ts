@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-share',
-  templateUrl: './share.component.html',
-  styleUrls: ['./share.component.scss']
+  templateUrl: './shares.component.html',
+  styleUrls: ['./shares.component.scss']
 })
 export class SharesComponent {
 

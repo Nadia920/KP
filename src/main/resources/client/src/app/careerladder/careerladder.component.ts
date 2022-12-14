@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CareerLadder } from '../models/careerladder.model';
 import { CareerLadderService } from '../careerladder/careerladder.service';
 
-// добавьте к этому сервис
 @Component({
   selector: 'app-careerladder',
   templateUrl: './careerladder.component.html',

@@ -6,12 +6,12 @@ export class Apartment{
   totalCost: number;
   companyPaymentPercentage: number;
   termsOfProvision: String;
-  typeFinancialMotivation: TypeFinancialMotivation;
+  typeFinancialMotivation?: TypeFinancialMotivation;
   constructor( id: number, address: String,
     totalCost: number,
     companyPaymentPercentage: number,
     termsOfProvision: String,
-    typeFinancialMotivation: TypeFinancialMotivation){
+    typeFinancialMotivation?: TypeFinancialMotivation){
         this.id = id;
         this.address =  address;
         this.totalCost = totalCost;
