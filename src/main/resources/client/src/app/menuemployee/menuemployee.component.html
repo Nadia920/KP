@@ -1,12 +1,12 @@
-<div class="grid text-center">
-  <h1>Выберите пункт меню:</h1>
-  <a routerLink="/Employee/showYourMotivation"><button  class="button2" tabindex="0"> 1 - Твои бонусы </button></a>
-  <a routerLink="/Employee/allMotivations"><button class="button2" tabindex="0"> 2 - Все бонусы </button></a>
-  <a routerLink="/Employee/yourWorkStatistics"><button  class="button2" tabindex="0"> 3 - Статистика твоей работы </button></a>
-  <a routerLink="/Employee/careerLadder"><button class="button2" tabindex="0"> 4 - Карьерная лестница </button></a>
-  <a routerLink="/Employee/punishment"><button class="button2" tabindex="0"> 5 - Посмотреть возможные наказания </button></a>
-  <a routerLink="/Employee/finMot"><button class="button2" tabindex="0"> 5 - Посмотреть типы не финансовых мотиваций </button></a>
-  <a routerLink="/Employee/nonFinMot"><button class="button2" tabindex="0"> 5 - Посмотреть типы финансовых мотиваций </button></a>
-  <br/>
-  <router-outlet></router-outlet>
-</div>
+<main class="form-signin">
+  <h1 class="h3 mb-3 fw-normal text-center">Выберите пункт меню</h1>
+  <div class="btn-group-vertical">
+      <a routerLink="/Employee/showYourMotivation" class="btn btn-lg btn-primary mb-1" role="button">Твои бонусы</a>
+      <a routerLink="/Employee/allMotivations" class=" btn btn-lg btn-primary mb-1" role="button">Все бонусы</a>
+      <a routerLink="/Employee/yourWorkStatistics" class=" btn btn-lg btn-primary mb-1" role="button">Статистика твоей работы</a>
+      <a routerLink="/Employee/careerLadder" class=" btn btn-lg btn-primary mb-1" role="button">Карьерная лестница</a>
+      <a routerLink="/Employee/punishment" class=" btn btn-lg btn-primary mb-1" role="button">Посмотреть возможные наказания</a>
+      <a routerLink="/Employee/finMot" class=" btn btn-lg btn-primary mb-1" role="button">Посмотреть типы не финансовых мотиваций</a>
+      <a routerLink="/Employee/nonFinMot" class=" btn btn-lg btn-primary" role="button">Посмотреть типы финансовых мотиваций</a>
+  </div>
+</main>
